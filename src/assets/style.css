@@ -1,0 +1,475 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f3fb;
+}
+/* src/assets/style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 60px;
+  box-shadow: 0px 1px 15px 4px rgba(63, 64, 178, 0.205);
+}
+@media print {
+    .bill-copy {
+        /* Add print-specific styles here */
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .receipt {
+        display: none; /* Hide receipt button in print view */
+    }
+}
+
+.sideBarLinkActive {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background-color: #8c7fe6;
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.sideBarLinkNot {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  /* color: rgba(40, 36, 36, 0.823); */
+  width: 95%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.sideBarLink:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #8c7fe6;
+}
+
+li span h3 {
+  font-size: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  height: 50px;
+}
+
+.driverList td {
+  cursor: pointer;
+  padding: 10px 4px;
+}
+
+.driverList th:hover {
+  cursor: pointer;
+}
+
+marquee {
+  height: 18px;
+}
+
+.driverList th {
+  background-color: #8c7fe6;
+  /* color:  white; */
+}
+
+.sidebarNav {
+  margin-top: 35px;
+  border-radius: 0px 25px 25px 0px;
+  height: 550px;
+  box-shadow: 0px 4px 6px 0px #8080806b;
+}
+
+.driverLeftDiv {
+  box-shadow: inset 0px 0px 7px 0px #8b7de6;
+}
+
+.driverRideDetail {
+  box-shadow: inset 0px 0px 7px 0px #8b7de6;
+}
+
+
+.driverList table {
+  border: 2px solid #6c6bc098;
+}
+
+.driverList th,
+td {
+  text-align: center;
+  border: 1px solid #6c6bc098;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.driverList th,
+td:first-child {
+  width: 10px;
+  padding: 0px;
+}
+
+.SubDriverForm select:focus {
+  outline: 1px solid #6c6bc098;
+}
+
+.SubDriverForm input {
+  font-size: 15px;
+}
+
+.formDiv div {
+  width: 30%;
+}
+
+.SubDriverForm input:focus {
+  outline: 1px solid #6c6bc098;
+}
+
+.SubDriverForm input::placeholder {
+  color: gray;
+  font-size: 15px;
+}
+
+
+.signInForm div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.signInForm input:focus {
+  outline: 1px solid #6c6bc098;
+}
+
+.dashboard .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  flex-wrap: wrap;
+  width: 30%;
+  color: white;
+  font-size: 23px;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+  border-radius: 12px;
+}
+
+.dashboard .box:hover {
+  cursor: pointer;
+  transform: scale(1.05)
+}
+
+.detailData {
+  list-style: none;
+}
+
+.rateDiv input:focus {
+  outline: 2px solid #939dca;
+}
+
+.rateDiv input {
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  width: 56%;
+  padding: 7px 10%;
+  outline: 2px solid #e5e7eb;
+}
+
+
+.driverList td {
+  text-align: center;
+  /* max-width: 10px; */
+  overflow: hidden;
+}
+
+.driverList th {
+  text-align: center;
+  /* max-width: 10px; */
+}
+
+.driverForm::-webkit-scrollbar {
+  width: 8px;
+}
+
+.driverForm::-webkit-scrollbar-thumb {
+  background-color: #8a80e2;
+  border-radius: 4px;
+}
+
+.drillMain::-webkit-scrollbar {
+  width: 8px;
+}
+
+.drillMain::-webkit-scrollbar-thumb {
+  background-color: #8a80e2;
+  border-radius: 4px;
+}
+
+.driverForm {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.BasicDetails input {
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  width: 56%;
+  padding: 12px 10%;
+  outline: 2px solid #e5e7eb;
+}
+
+.BasicDetails input:focus {
+  outline: 2px solid #939dca;
+}
+
+.fileDiv input {
+  cursor: pointer;
+  font-size: 14px;
+  width: 70% !important;
+  padding: 4px !important;
+}
+
+.fileDiv img {
+  border-radius: 10px;
+  height: 120px;
+  width: 70% !important;
+  padding: 4px !important;
+}
+
+#search {
+  background-image: url('./Image/search.png');
+  background-size: 21px;
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+  outline: none;
+}
+
+.dataList:nth-child(odd) {
+  background-color: #bab3f15e;
+  /* Style for odd-numbered child elements */
+}
+
+.dataList img {
+  height: 25px !important;
+  width: 25px !important;
+  border-radius: 10px;
+}
+
+.dataList div {
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+.dataList {
+  box-shadow: 0px 4px 6px 0px #8080806b;
+  transition: border 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.dataList:hover {
+  cursor: pointer;
+  border: 2px solid #0c8ce9;
+}
+
+.headers div {
+  text-align: center;
+}
+
+.headers:hover {
+  cursor: pointer;
+  border: 2px solid #0c8ce9;
+}
+
+
+/* .searchDriverList {
+  border: 2px solid gray;
+  box-sizing: border-box;
+
+  padding: 4px 2px 4px 30px;
+} */
+
+/* .searchDriverList:focus {
+  outline: 2px solid #939dca;
+} */
+
+/* .swiper-wrapper {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+} */
+
+.pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 40px !important;
+  text-align: center;
+  /* margin: auto; */
+}
+
+.pagination{
+  margin-bottom: 10px;
+}
+
+
+.pagination li:hover {
+  cursor: pointer;
+}
+
+.pagination li:active {
+  background-color: transparent;
+}
+
+.paginationActive {
+  background-color: #939dca;
+  color: black;
+}
+
+.rideDetails th {
+  padding: 0px 2px;
+  max-width: 150px;
+  overflow: hidden;
+  border: 1px solid #939dca;
+  font-size: 14px;
+  text-align: center;
+}
+
+.rideDetails th p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rideDetails td p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 7px 0px;
+}
+
+.rideDetails marquee {
+  font-size: 13px;
+}
+
+.rideDetails td {
+  cursor: pointer;
+  padding: 5px 0px;
+  max-width: 100px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.actions div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.drillHeaders {
+  text-align: center;
+  box-shadow: 0px 4px 6px 0px #8080806b;
+}
+
+.drillHeaders div {
+  padding: 5px 0px;
+}
+
+.r {
+  border-right: 1px solid black;
+}
+
+.b {
+  border-bottom: 1px solid black;
+}
+
+.t {
+  border-top: 1px solid black;
+}
+
+.l {
+  border-left: 1px solid black;
+}
+
+.receipt {
+  cursor: pointer;
+  color: black !important;
+  /* filter: drop-shadow(0 0 0.75rem #8c7fe6); */
+  box-shadow: 10px 10px 22px 0px #8c7fe6;
+}
+
+.drillDataRow {
+  background-color: #ececec;
+  text-align: left;
+}
+
+
+.drillDataRow div {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  padding: 5px 7px;
+}
+
+.drillSelectBox {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 15px;
+  height: 65px;
+  flex-wrap: wrap;
+  width: 25%;
+  color: #8c7fe6;
+  cursor: pointer;
+  background-color: #ececec;
+}
+
+.drillActive {
+  height: 85px !important;
+  background-color: #d9d9d9 !important;
+  clip-path: polygon(100% 0, 100% 75%, 51% 100%, 0 75%, 0 0);
+}
+
+.driverDetail {
+  box-shadow: 0px 1px 6px 0px #8080806b;
+}
+
+.bankDetail {
+  box-shadow: 0px 1px 6px 0px #8080806b;
+}
